@@ -1,0 +1,21 @@
+
+#myBody{
+    background-color: blueviolet;
+}
+
+
+
+.firstBlock {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.lastBlock {
+    font-style: italic;
+    font-size: 14px;
+    color: blue !important;
+}
+
+.myDiv {
+    color: red;
+}
