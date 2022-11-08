@@ -50,3 +50,41 @@
     z-index: -2;
     transform: rotate(15deg);
 }
+
+.box {
+    border: 1px solid gray;
+    margin: 2px;
+}
+
+.box:first-child {
+    background-color: aqua;
+}
+
+.box:last-child {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.box:nth-child(4){
+    color: brown;
+    font-weight: bold;
+    position: static;
+}
+
+
+/* POSITIONING */
+/*
+    position:   static;
+                absolute 
+                relative
+*/
+
+.parent {
+    position: relative;
+}
+.box:nth-child(3) {
+    position: absolute;
+    background-color: aquamarine;
+    left: 25px;
+    top: 25px;
+}
