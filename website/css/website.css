@@ -1,22 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap');
+
+:root {
+    --main-color: #fd4766;
+    --text-font-size: 13px;
+}
+
 
 body  {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
-
-
 
 
 /* SLIDE */ 
 
+header {
+    position: relative;
+}
+
 .slide{
-    background-image: url("https://picsum.photos/id/275/1980/1024");
-    height: 500px;
+    background-image: url("../img/nature.jpg");
+    height: 350px;
     background-position: bottom center;
     background-size: cover;
     background-repeat: no-repeat;
     
-    position: absolute;
+    /*position: absolute;*/
     top: 0;
     left:0;
     right: 0;
@@ -29,7 +39,7 @@ body  {
     z-index: 5;
 }
 .slide .slideText h1 span {
-    color: red;
+    color: var(--main-color);
 }
 .slide .slideText div {}
 .slide .slideText button {}
@@ -40,5 +50,108 @@ body  {
 header nav {
     z-index: 10;
     position: fixed;
+    width: 100%;
+    height: 45px;
 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* 
+. -> class
+# -> id
+header -> tag/element
+*/
+
+header nav .fa-shopify {
+    width: 40px;
+    height: 40px;
+    border-color: black;
+    border-width: 1px;
+    border-style: dotted;
+    border-radius: 100%;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+}
+header nav ul li {}
+header nav ul li a:link, 
+header nav ul li a:visited{
+    text-decoration: none;
+    color: black;
+}
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+header nav .social {}
+header nav .social > a {
+    color: black;
+    text-decoration: none;
+    margin: 5px;
+    font-size: 10px;
+}
+
+
+header nav button {
+    text-transform: uppercase;
+    background: none;
+    width: 150px;
+    height: 35px;
+    border-radius: 18px;
+
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    letter-spacing: 2px;
+}
+
+
+/* SLIDE */
+
+.slide{}
+.slideText{}
+.slideText h1 {
+    margin-bottom: 5px;
+}
+.slideText div {
+    color: gray;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.slideText button {
+    text-transform: uppercase;
+    color: white;
+    width: 150px;
+    height: 35px;
+    border-radius: 18px;
+    background-color: var(--main-color);
+    border: 0;
+}
+
+/* ROWS BELOW HEADER */
+
+.webRow {
+    position: relative;
+    width: 100%;
+}
+.webBlock {
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
