@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 
 :root {
     --main-color: #fd4766;
@@ -154,4 +155,69 @@ header nav button {
 .webBlock {
     margin-left: 10vw;
     margin-right: 10vw;
+    /*border: 1px solid red;*/
 }
+
+/* FIRST ROW */
+
+.firstRow {
+    color: gray;
+    display: flex;
+
+}
+.firstRow img {
+    width: 20vw;
+    margin: 5vw;
+    border-radius: 15px;
+}
+
+h1, h4{
+    color: black;
+    /*font-family: 'Dancing Script', cursive;
+    font-weight: 700;*/
+}
+
+h3{
+    font-size: 22px;
+    background: rgb(3,186,215);
+    background: linear-gradient(125deg, rgba(3,186,215,1) 0%, rgba(190,0,189,1) 33%, rgba(1,140,180,1) 66%, rgba(255,0,56,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.firstRow .colRight {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* SECOND ROW */
+
+.secondRow {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.secondRow iframe {
+    box-shadow: 10px 10px 27px -9px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 27px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 27px -9px rgba(0,0,0,0.75);
+
+    border-radius: 15px;
+}
+
+/* THIRD ROW - GALLERY */
+
+.thirdRow {
+    display: flex;
+    flex-wrap: wrap;
+}
+.galleryBox {
+    width: 17rem; /* 75px */
+    height: 25rem;
+    border: 1px solid red;
+}
+.galleryBox img {}
+.galleryBox .category {}
+.galleryBox .imageDescription {}
