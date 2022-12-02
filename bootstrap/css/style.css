@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&display=swap');
+
+:root {
+    --main-bg-dark-color: #1d3344;
+    --main-yellow-color: #e0af4b;
+    --main-text-color: #878d91;
+    --main-bg-gray-color: #ebebeb;
+}
+
+body {
+    font-family: 'Cinzel', serif;
+}
+
+.bg-gray {
+    background-color: var(--main-bg-gray-color);
+}
+
+.bg-dark{
+    background-color: var(--main-bg-dark-color);
+}
