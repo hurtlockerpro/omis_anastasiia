@@ -12,12 +12,12 @@
 <body>
 
     <div class="container">
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-2 g-md-2">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 mb-2">
             <div class="col col-md-8 col-lg-8">
 
-                <div class="row row-cols-1 row-cols-md-2 bg-gray rounded-start">
+                <div class="row row-cols-1 row-cols-md-2 bg-gray" id="headerWithLeftLine">
                     <div class="col col-md-4">
-                        <img src="https://picsum.photos/id/12/200/200" alt="Photo" class="img-thumbnail mx-auto d-block myPhoto">
+                        <img src="https://picsum.photos/id/12/200/200" alt="Photo" class="mx-auto d-block myPhoto">
                     </div>
                     <div class="col col-md-8">
                         <h1>John smith</h1>
@@ -26,21 +26,68 @@
                     </div>
                 </div>
                 
+            </div>
+            <div class="col col-md-4 col-lg-4 bg-dark" id="headerWithRoundedCorner">col 12
+
+                <div class="headerLink">
+                    <div class="headerLinkIcon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <a href="http://" class="headerLinkText">link 1</a>
+                </div>
+
+                <div class="headerLink">
+                    <div class="headerLinkIcon">
+                        <i class="fa-solid fa-mobile-retro"></i>
+                    </div>
+                    <a href="http://" class="headerLinkText">link 2</a>
+                </div>
+                <div class="headerLink">
+                    <div class="headerLinkIcon">
+                        <i class="fa-solid fa-mobile-retro"></i>
+                    </div>
+                    <a href="http://" class="headerLinkText">link 3</a>
+                </div>
+                <div class="headerLink">
+                    <div class="headerLinkIcon">
+                        <i class="fa-solid fa-mobile-retro"></i>
+                    </div>
+                    <a href="http://" class="headerLinkText">link 4</a>
+                </div>
 
             </div>
-            <div class="col col-md-4 col-lg-4 bg-dark">col 12</div>
         </div>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-            <div class="col col-md-8 col-lg-4 border">col 21</div>
-            <div class="col col-md-4 col-lg-8 border">col 22</div>
-            <div class="col col-md-12 col-lg-12 border">col 23</div>
+
+
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+            <div class="col col-md-12 col-lg-8">
+                left col
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+                    <div class="col col-md-8 col-lg-4 border">col 21</div>
+                    <div class="col col-md-4 col-lg-8 border">col 22</div>
+                    <div class="col col-md-12 col-lg-12 border">col 23</div>
+                </div>
+
+            </div>
+            <div class="col col-md-12 col-lg-4">
+                right col
+                    <div class="row row-cols-1 row-cols-md-2">
+                        <div class="col border">col 31</div>
+                        <div class="col border">col 32</div>
+                        <div class="col border">col 33</div>
+                        <div class="col border">col 34</div>
+                    </div>
+            </div>
         </div>
-        <div class="row row-cols-1 row-cols-md-2">
-            <div class="col border">col 31</div>
-            <div class="col border">col 32</div>
-            <div class="col border">col 33</div>
-            <div class="col border">col 34</div>
-        </div>
+
+
+
+        
+
+
+
+
+        
     </div>
     
 </body>
