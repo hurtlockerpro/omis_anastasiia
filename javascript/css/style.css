@@ -5,3 +5,12 @@
     border: 1px solid black;
     position: relative;
 }
+
+#myCars{
+    width: 100px;
+    height: 200px;
+    border: 1px solid black;
+}
+#btnAdd{
+    color: green;
+}
