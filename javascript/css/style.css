@@ -14,3 +14,32 @@
 #btnAdd{
     color: green;
 }
+
+.red-numbers {
+    color: red;
+    font-weight:bold;
+}
+
+.green-numbers {
+    color: green;
+    font-weight: bold;
+}
+
+/* new example */
+.numberBox {
+    text-align: center;
+    width: 150px;
+}
+#number{
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border: 1px solid gray;
+    font-size: 50px;
+}
+#pluss{
+    width: 50px;
+}
+#minus{
+    width: 50px;
+}

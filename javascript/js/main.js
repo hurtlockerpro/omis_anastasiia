@@ -42,7 +42,7 @@ console.log(sumNumbers2(15, 25))
 
 // ARRAY
 // index      0       1        2
-let cars = ['audi', 'bmw', 'citroen', true, 100, undefined]
+let cars = ['audi', 'bmw', 'citroen', true, 100, undefined, 'abc', 200, 50, 170]
 console.log(cars[1])
 cars[2] = 'porsche'
 console.log(cars[2])
@@ -108,8 +108,110 @@ btnAdd.addEventListener('click', function(){
 
     for (let index = 0; index < cars.length; index++) {
         const element = cars[index];
-        //carsListDiv.innerText += element + ', '
-        carsListDiv.innerHTML += element + '<br>'
+        if (typeof element == 'string'){
+            //carsListDiv.innerText += element + ', '
+            carsListDiv.innerHTML += element + '<br>'
+        } 
+        //           false
+        else if (between(element) == true && typeof element == 'number')
+        {
+            carsListDiv.innerHTML += print(element, 'green-numbers')
+        } 
+        else if (between(element) == false && typeof element == 'number')
+        {
+            carsListDiv.innerHTML += print(element, 'red-numbers')
+        }
     }
-
 })
+
+function between(checkNumber){ // 100
+    let start = 150
+    let end = 300
+
+    if (typeof checkNumber == 'number' && 
+    checkNumber >= start && checkNumber <= end) 
+    {
+        return true // if true then exit
+    }
+    return false 
+}
+
+function print(value, className){
+    // <div class="red">100</div>
+    return '<div class="' + className + '">' + value + '</div>'
+}
+
+
+/* IF statements */
+/*
+> grater
+> smaller
+== equal
+>= greater and equal 
+<= smaller and equal 
+!= not equal
+*/
+result = 18;
+//    true
+if(result == 15){
+    console.log('Result is 15')
+} 
+else if(result == 16){
+    console.log('Result is 16')
+// false
+} else if (result > 16) {
+    console.log('Result is grater than 10')
+}
+else { 
+    console.log('Result is smaller than 10')
+}
+
+// 
+// && - AND  - и
+// true && true && true ... -> true 
+// true && true && false ... -> false
+
+// || - OR - или 
+// true || false || false ... -> true
+// false || false || false ... -> false
+
+let result2 = 15
+if (result == 18 && result2 == 16) {
+    console.log('OK')
+} 
+else if (result >= 19 || result <= 10){
+    console.log('Big and Small number')
+} 
+else if (result == 18 && result2 != 10 || result > 20)
+{
+    console.log('Result is good')
+}
+
+/* new example */
+
+let divNumber = document.getElementById('number')
+let btnPluss = document.getElementById('pluss')
+let btnMinus = document.getElementById('minus')
+
+btnPluss.addEventListener('dblclick', function(){
+    increment()
+})
+btnMinus.addEventListener('dblclick', function(){
+    decrement()
+})
+
+/* logic */
+let number = 0 // global
+
+function increment(){
+    number = number + 1
+    //number +=  1
+    //number++
+    divNumber.innerHTML = number
+}
+function decrement(){
+    number = number - 1
+    //number -=  1
+    //number--
+    divNumber.innerHTML = number
+}
