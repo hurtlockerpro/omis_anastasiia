@@ -193,10 +193,10 @@ let divNumber = document.getElementById('number')
 let btnPluss = document.getElementById('pluss')
 let btnMinus = document.getElementById('minus')
 
-btnPluss.addEventListener('dblclick', function(){
+btnPluss.addEventListener('click', function(){
     increment()
 })
-btnMinus.addEventListener('dblclick', function(){
+btnMinus.addEventListener('click', function(){
     decrement()
 })
 
